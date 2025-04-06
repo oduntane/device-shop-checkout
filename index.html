@@ -8,8 +8,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Device Shop Checkout Page"/>
     <title>Device Shop Checkout</title>
   </head>
   <body>
+    <main class="container" tabindex="0">
+      <h1 tabindex="0" aria-label="You have 3 items ready for checkout" class="heading">Checkout<span role="none" class="body-text semi-bold"> 3 ITEMS</span></h1>
+      <div>
+        <section class="summary" aria-label="Product Summary Section" tabindex="0">
+          <ul>
+            <li class="product-item">
+              <div class="product-icon"><img class="product-icon" src="/Gold@2x.png" alt="iPhone 12 Pro image"/></div>
+              <div class="product-detail" aria-label="Product: iPhone, Price: $999.00, Color: Golden, Quantity: 1" tabindex="0">
+                <p class="body-text semi-bold"><span class="left">iPhone 12 Pro</span><span class="right">$999.00</span></p>
+                <p class="body-text medium"><span class="color">Golden</span></p>
+                <p class="body-text regular"><span class="quantity">x 1</span><span class="right"><img src="/close-icon.svg" alt="" /> </span></p>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-icon"><img class="product-icon" src="/Apple-watchx2.png" alt="Apple watch"/></div>
+              <div class="product-detail" aria-label="Product: Apple Watch, Price: $399.00, Color: Blue, Quantity: 1" tabindex="0">
+                <p class="body-text semi-bold"><span class="left">Apple Watch</span><span class="right">$399.00</span></p>
+                <p class="body-text medium"><span class="color">Blue</span></p>
+                <p class="body-text regular"><span class="quantity">x 1</span><span class="right"><img src="/close-icon.svg" alt="" /> </span></p>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-icon"><img class="product-icon" src="/iMac@2x.png" alt="iMac"/></div>
+              <div class="product-detail" aria-label="Product: iMac, Price: $1199.00, Color: Green, Quantity: 1" tabindex="0">
+                <p class="body-text semi-bold"><span class="left">iMac</span><span class="right">$1199.00</span></p>
+                <p class="body-text medium"><span class="color">Green</span></p>
+                <p class="body-text regular"><span class="quantity">x 1</span><span class="right"><img src="/close-icon.svg" alt="" /> </span></p>
+              </div>
+            </li>
+          </ul>
+          <hr />
+          <div class="coupon-form">
+            <input class="body-text regular" aria-label="Enter Coupon Code" placeholder="Enter coupon code"/>
+            <button class="body-text medium">Apply Coupon</button>
+          </div>
+          <div class="price body-text semi-bold">
+            <p tabindex="0" aria-label="The sub total is $2597.00"><span>Sub total</span> <span class="right">$2597.00</span></p>
+            <p tabindex="0" aria-label="Tax deduction is $623.28"><span>Tax</span> <span class="right">$623.28</span></p>
+            <p  tabindex="0" aria-label="Total is $3220.28"><span>Total</span> <span class="right">$3220.28</span></p>
+          </div>
+        </section>
+        <section class="contact" aria-labelledby="label-contact-information" tabindex="0">
+          <p id="label-contact-information" class="body-text semi-bold">Contact Information</p>
+          <form>
+            <div class="form-group">
+              <label for="name" class="body-text medium">First & Last name</label>
+              <input type="text" id="name" placeholder="Enter first & last name" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="body-text medium">Email Address</label>
+              <input type="email" id="email" placeholder="Enter email address" />
+            </div>
+            <div class="form-group">
+              <label for="country" class="body-text medium">Country</label>
+              <select id="country">
+                <option selected>Finland</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="postal-code" class="body-text medium">Postal Code</label>
+              <input id="postal-code" type="number" placeholder="00270" />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="body-text medium">Continue</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
